@@ -3011,6 +3011,7 @@ pre.rouge .gs {
 <li><a href="#conversational-style">Conversational style</a></li>
 <li><a href="#homographs">Homographs</a></li>
 <li><a href="#minimalism">Minimalism</a></li>
+<li><a href="#users">Users</a></li>
 </ul>
 </li>
 <li><a href="#formatting">Formatting</a>
@@ -3019,7 +3020,7 @@ pre.rouge .gs {
 <li><a href="#date-formats">Date formats</a></li>
 <li><a href="#man-pages">Man page references</a></li>
 <li><a href="#non-breaking-spaces">Non-breaking spaces</a></li>
-<li><a href="#_product_names_and_version_references">Product names and version references</a></li>
+<li><a href="#product-names-versions-ref">Product names and version references</a></li>
 <li><a href="#single-step-procedures">Single-step procedures</a></li>
 <li><a href="#titles-and-headings">Titles and headings</a></li>
 <li><a href="#user-replaced-values">User-replaced values</a></li>
@@ -3037,6 +3038,7 @@ pre.rouge .gs {
 <li><a href="#technical-examples">Technical examples</a>
 <ul class="sectlevel3">
 <li><a href="#commands-with-root-privileges">Commands requiring root privileges</a></li>
+<li><a href="#ellipses-in-yaml-code-blocks">Ellipses in YAML code blocks</a></li>
 <li><a href="#ip-addresses-and-mac-addresses">IP addresses and MAC addresses</a></li>
 <li><a href="#long-code-examples">Long code examples</a></li>
 <li><a href="#code-example-syntax-highlighting">Syntax highlighting</a></li>
@@ -3072,7 +3074,11 @@ pre.rouge .gs {
 </li>
 <li><a href="#release-notes">Release notes</a>
 <ul class="sectlevel3">
-<li><a href="#release-notes-doc-texts">Release notes doc texts</a></li>
+<li><a href="#style-advice-for-release-note-texts">Style advice for release note texts</a></li>
+<li><a href="#tenses-in-release-notes">Tenses in release notes</a></li>
+<li><a href="#headings-for-release-notes">Headings for release notes</a></li>
+<li><a href="#jira-links-release-notes">References to Jira in release notes</a></li>
+<li><a href="#release-note-types">Release note types and sections</a></li>
 </ul>
 </li>
 <li><a href="#accessibility">Accessibility</a>
@@ -3132,10 +3138,10 @@ pre.rouge .gs {
 <div class="sect2">
 <h3 id="_about_this_guide"><a class="anchor" href="#_about_this_guide"></a><a class="link" href="#_about_this_guide">About this guide</a></h3>
 <div class="paragraph">
-<p>The style and language guidance in this guide overrides or supplements some guidance provided by the <em>IBM Style</em> guide, which is the primary source of style guidance for <a href="https://www.redhat.com/">Red&#160;Hat</a> product and cross-product solution documentation.</p>
+<p>The style and language guidance in this guide overrides or supplements some guidance provided by the <a href="https://www.ibm.com/docs/en/ibm-style"><em>IBM Style</em></a> guide, which is the primary source of style guidance for <a href="https://www.redhat.com/">Red&#160;Hat</a> product and cross-product solution documentation.</p>
 </div>
 <div class="paragraph">
-<p>The Red&#160;Hat Customer Content Services team has created this guide to help ensure that Red&#160;Hat product documentation is clear, consistent, and cohesive. Upstream communities who want to align more closely with the standards used by Red&#160;Hat product documentation can also use this guide.</p>
+<p>The Red&#160;Hat Customer Content Services team has created this guide to help ensure that Red&#160;Hat product documentation is clear, consistent, and cohesive. Upstream communities who want to align more closely with the standards used by Red&#160;Hat product documentation can also use this guide. However, some links in this guide might not be accessible for non-Red Hat associates.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3157,8 +3163,24 @@ pre.rouge .gs {
 <p>Red&#160;Hat product documentation adheres to the style guidance provided in the <em>IBM Style</em> guide, the <em>Red&#160;Hat supplementary style guide for product documentation</em>, and documentation style guidelines specific to Red&#160;Hat products, such as Red&#160;Hat Enterprise Linux or Red&#160;Hat OpenShift Container Platform.</p>
 </div>
 <div class="paragraph">
-<p>When seeking style guidance, consult the style guide specific to your product documentation project first, if applicable, then the <em>Red&#160;Hat supplementary style guide for product documentation</em>, and finally the <em>IBM Style</em> guide.
-The following image illustrates the hierarchical relationship between the different style guides in Red&#160;Hat product documentation:</p>
+<p>When seeking style guidance, consult the style guide specific to your product documentation project first, if applicable, then the <a href="https://redhat-documentation.github.io/supplementary-style-guide"><em>Red&#160;Hat supplementary style guide for product documentation</em></a>, and finally the <a href="https://www.ibm.com/docs/en/ibm-style"><em>IBM Style</em></a> guide.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To log in to the <em>IBM Style</em> guide, enter your Red&#160;Hat email address in the <strong>IBMid</strong> field.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The following image illustrates the hierarchical relationship between the different style guides in Red&#160;Hat product documentation:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/ccs-style-guide-hierarchy.png" alt="CCS style guide hierarchy"></span></p>
@@ -3214,6 +3236,71 @@ The following image illustrates the hierarchical relationship between the differ
 </div>
 <div class="sect3">
 <h4 id="year-2024"><a class="anchor" href="#year-2024"></a><a class="link" href="#year-2024">2024</a></h4>
+<div class="sect4">
+<h5 id="july-2024"><a class="anchor" href="#july-2024"></a><a class="link" href="#july-2024">July 2024</a></h5>
+<div class="ulist">
+<div class="title">Glossary entries</div>
+<ul>
+<li>
+<p><strong><a href="#composite-content-view">composite content view</a></strong>: Updated glossary entry to use lowercase spelling</p>
+</li>
+<li>
+<p><strong><a href="#content-view">content view</a></strong>: Updated glossary entry to use lowercase spelling</p>
+</li>
+<li>
+<p><strong><a href="#nmstate">Nmstate</a></strong>: Added glossary entry</p>
+</li>
+<li>
+<p><strong><a href="#on-premise">on-premise</a></strong>: Updated glossary entry to include Red&#160;Hat OpenShift Container Platform definition</p>
+</li>
+<li>
+<p><strong>Product</strong>: Removed glossary entry because Red&#160;Hat Satellite no longer capitalizes it</p>
+</li>
+<li>
+<p><strong>Red&#160;Hat Network Proxy Server</strong>: Removed glossary entry because this term has been replaced by "Capsule Server"</p>
+</li>
+<li>
+<p><strong>Red&#160;Hat Network Satellite Server</strong>: Removed glossary entry because this term has been replaced by "Satellite Server"</p>
+</li>
+<li>
+<p><strong><a href="#subscription-manifest">subscription manifest</a></strong>: Updated glossary entry to use lowercase spelling</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Style guidance</div>
+<ul>
+<li>
+<p><strong><a href="#external-links">External links</a></strong>: Added guidance to avoid using URL shorteners</p>
+</li>
+<li>
+<p><strong><a href="#shortdesc">Short descriptions</a></strong>: Added guidance to avoid starting modules with admonitions, including Technology Preview admonitions</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="june-2024"><a class="anchor" href="#june-2024"></a><a class="link" href="#june-2024">June 2024</a></h5>
+<div class="ulist">
+<div class="title">Glossary entries</div>
+<ul>
+<li>
+<p><strong><a href="#base64">Base64</a></strong>: Added glossary entry</p>
+</li>
+<li>
+<p><strong><a href="#offline">offline</a></strong>: Added glossary entry</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Style guidance</div>
+<ul>
+<li>
+<p><strong><a href="#technology-preview-guidance">Technology Preview</a></strong>: Updated guidance to clarify that you can omit the first sentence if you are not referring to a specific feature.</p>
+</li>
+</ul>
+</div>
+</div>
 <div class="sect4">
 <h5 id="may-2024"><a class="anchor" href="#may-2024"></a><a class="link" href="#may-2024">May 2024</a></h5>
 <div class="ulist">
@@ -4231,7 +4318,7 @@ The following image illustrates the hierarchical relationship between the differ
 <h2 id="style-guidelines"><a class="anchor" href="#style-guidelines"></a><a class="link" href="#style-guidelines">Style guidelines</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>These recommendations might override existing guidance in the <em>IBM Style</em> guide, or might provide guidance for items not covered in the <em>IBM Style</em> guide.</p>
+<p>These recommendations might override existing guidance in the <a href="https://www.ibm.com/docs/en/ibm-style"><em>IBM Style</em></a> guide, or might provide guidance for items not covered in the <em>IBM Style</em> guide.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4494,13 +4581,54 @@ Therefore, be aware of this potential issue, and, when possible, avoid writing s
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="users"><a class="anchor" href="#users"></a><a class="link" href="#users">Users</a></h4>
+<div class="paragraph">
+<p>In most cases, the word "user" refers to a person or a person&#8217;s user account, and therefore would be considered animate. In these cases, use animate personal pronouns such as "who".</p>
+</div>
+<div class="paragraph">
+<p>In certain technical cases, these users are not persons but instead system accounts or more abstract concepts (inanimate). For example, Linux <code>root</code> and <code>guest</code> users do not relate to any person. Applications and services might run as specific Linux users with no person controlling them. SELinux users such as <code>user_u</code> or <code>sysadm_u</code> are identifiers of one or multiple Linux users for access control purposes. In these specific cases, refer to these inanimate users with inanimate personal pronouns such as "that".</p>
+</div>
+<div class="paragraph">
+<p>In these specific cases, and only if you cannot write around it, you can refer to these inanimate users with inanimate personal pronouns such as "that".</p>
+</div>
+<div class="ulist">
+<div class="title">Examples</div>
+<ul>
+<li>
+<p>Animate user</p>
+<div class="paragraph">
+<p><span class="image"><img src="images/no.png" alt="no"></span> Experienced <em>users that</em> can configure their own systems&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/yes.png" alt="yes"></span> <em>Users who</em> want to install their own packages&#8230;&#8203;</p>
+</div>
+</li>
+<li>
+<p>Inanimate user</p>
+<div class="paragraph">
+<p><span class="image"><img src="images/no.png" alt="no"></span> A Linux user has the restrictions of the <em>SELinux user who</em> it is assigned to.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/no.png" alt="no"></span> A Linux user has the restrictions of the <em>SELinux user</em> to <em>whom</em> it is assigned.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/yes.png" alt="yes"></span> Specify a <em>user that</em> is allowed to perform the requested action.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/yes.png" alt="yes"></span> A Linux user has the restrictions of the <em>SELinux user that</em> it is assigned to.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="formatting"><a class="anchor" href="#formatting"></a><a class="link" href="#formatting">Formatting</a></h3>
 <div class="sect3">
 <h4 id="commands-in-code-blocks"><a class="anchor" href="#commands-in-code-blocks"></a><a class="link" href="#commands-in-code-blocks">Commands in code blocks</a></h4>
 <div class="paragraph">
-<p>Use a single command per code block for each procedure step. This approach helps with readability and makes it possible for the copy button in code blocks to work correctly.</p>
+<p>Use a single command per code block for each procedure step. Separate a command and its related example output into individual code blocks. This approach helps with readability and makes it possible for the copy button in code blocks to work correctly.</p>
 </div>
 <div class="paragraph">
 <p>By default, use bold formatting for commands in code blocks to visually distinguish the commands from their lead-in sentences and from the command prompts and example outputs. For consistency, use bold formatting for commands even when no command output is shown in the code block.</p>
@@ -4520,7 +4648,7 @@ Therefore, be aware of this potential issue, and, when possible, avoid writing s
 </table>
 </div>
 <div class="literalblock">
-<div class="title">Example AsciiDoc: A command and its output in a code block</div>
+<div class="title">Example AsciiDoc: A command and its output in separate code blocks</div>
 <div class="content">
 <pre>Verify that the `libvirt` default network is active and configured to start automatically:</pre>
 </div>
@@ -4530,6 +4658,13 @@ Therefore, be aware of this potential issue, and, when possible, avoid writing s
 <pre>[subs="+quotes"]
 ----
 # *virsh net-list --all*
+----</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[subs="+quotes"]
+----
 Name      State    Autostart   Persistent
 --------------------------------------------
 default   active   yes         yes
@@ -4546,8 +4681,12 @@ default   active   yes         yes
 </div>
 <div class="listingblock">
 <div class="content">
-<pre># <strong>virsh net-list --all</strong>
-Name      State    Autostart   Persistent
+<pre># <strong>virsh net-list --all</strong></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Name      State    Autostart   Persistent
 --------------------------------------------
 default   active   yes         yes</pre>
 </div>
@@ -4613,7 +4752,7 @@ A <em>non-breaking space</em> prevents the company name from splitting across a 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_product_names_and_version_references"><a class="anchor" href="#_product_names_and_version_references"></a><a class="link" href="#_product_names_and_version_references">Product names and version references</a></h4>
+<h4 id="product-names-versions-ref"><a class="anchor" href="#product-names-versions-ref"></a><a class="link" href="#product-names-versions-ref">Product names and version references</a></h4>
 <div class="paragraph">
 <p>Use attributes instead of hard-coded references when you refer to the name of your product in full, to its abbreviated form, or to its major or minor version.
 Only use hard-coded version references if the version that you are referring to in a particular case never changes.</p>
@@ -5075,6 +5214,20 @@ Text for note.
 <div class="paragraph">
 <p>To help readers find the information that they need or to confirm that they are in the right place, every module and assembly must include a <em>short description</em>, also called an <em>abstract</em>.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Do not start a module or assembly with an admonition, even when adding the Technology Preview admonition. Always include a short description before including an admonition.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>This description is usually at least 2-3 sentences long, and you can scan it in a few seconds. It exists between the title and the main content, connecting them and providing context and disambiguation.</p>
 </div>
@@ -5235,6 +5388,31 @@ The following example shows one way that you could integrate a requirement for r
 <ul>
 <li>
 <p><a href="https://www.redhat.com/sysadmin/difference-between-sudo-su">Exploring the differences between sudo and su commands in Linux</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ellipses-in-yaml-code-blocks"><a class="anchor" href="#ellipses-in-yaml-code-blocks"></a><a class="link" href="#ellipses-in-yaml-code-blocks">Ellipses in YAML code blocks</a></h4>
+<div class="paragraph">
+<p>Use the number sign (<code>#</code>) to comment out an ellipsis in YAML code blocks.
+YAML reserves <code>&#8230;&#8203;</code> to indicate the end of a document without starting a new document.</p>
+</div>
+<div class="listingblock">
+<div class="title">Example AsciiDoc</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">operator.openshift.io/v1alpha1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">CertManager</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">cluster</span>
+<span class="c1"># ...</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Additional resources</div>
+<ul>
+<li>
+<p><a href="https://yaml.org/spec/1.2.2/#22-structures">YAML 1.2: Structures</a></p>
 </li>
 </ul>
 </div>
@@ -5522,6 +5700,9 @@ Deep links can break more frequently and can inadvertently bypass a site&#8217;s
 Bare URLs are unhelpful because they do not provide adequate context about the link target.</p>
 </li>
 <li>
+<p>Do not use URL shorteners to replace full URLs.</p>
+</li>
+<li>
 <p>Always include meaningful link text.
 Meaningful link text describes to users what content they will see if they click the link.</p>
 </li>
@@ -5573,7 +5754,7 @@ Meaningful link text describes to users what content they will see if they click
 <p>When not using running text, call out that this is a Knowledgebase article.</p>
 </li>
 <li>
-<p>When the link appears in <strong>Additional resources</strong>, put the article title first, followed by <code>(Red&#160;Hat Knowledgebase)</code>.</p>
+<p>When the link appears in <strong>Additional resources</strong>, put the article title first, followed by <code>(Red&#160;Hat Knowledgebase)</code> within the link.</p>
 </li>
 </ul>
 </div>
@@ -5589,7 +5770,7 @@ Meaningful link text describes to users what content they will see if they click
 <div class="title">Example: Additional resources</div>
 <ul>
 <li>
-<p><a href="https://access.redhat.com/solutions/199573">Does RHEL 7 support online resize of disk partitions?</a> (Red&#160;Hat Knowledgebase)</p>
+<p><a href="https://access.redhat.com/solutions/199573">Does RHEL 7 support online resize of disk partitions? (Red&#160;Hat Knowledgebase)</a></p>
 </li>
 </ul>
 </div>
@@ -5712,7 +5893,7 @@ For more information about the support scope of Red{nbsp}Hat Developer Preview s
 </ul>
 </div>
 <div class="paragraph">
-<p>Use the following template text verbatim, where <em>&lt;feature_name&gt;</em> is your feature name:</p>
+<p>Use the following template text verbatim, where <em>&lt;feature_name&gt;</em> is your feature name. If you are not referring to a specific feature, you can omit the first sentence of the template text:</p>
 </div>
 <div class="listingblock">
 <div class="title">Example AsciiDoc: Technology Preview admonition template</div>
@@ -5746,170 +5927,1123 @@ For more information about the support scope of Red{nbsp}Hat Technology Preview 
 </div>
 <div class="sect2">
 <h3 id="release-notes"><a class="anchor" href="#release-notes"></a><a class="link" href="#release-notes">Release notes</a></h3>
+<div class="paragraph">
+<p>A release note explains specific product behavior, capability, or problem relevant to a product version. Release notes for a particular product version are collected in a document that is published when the new version is released.</p>
+</div>
 <div class="sect3">
-<h4 id="release-notes-doc-texts"><a class="anchor" href="#release-notes-doc-texts"></a><a class="link" href="#release-notes-doc-texts">Release notes doc texts</a></h4>
+<h4 id="style-advice-for-release-note-texts"><a class="anchor" href="#style-advice-for-release-note-texts"></a><a class="link" href="#style-advice-for-release-note-texts">Style advice for release note texts</a></h4>
 <div class="paragraph">
-<p>A <em>doc text</em> is a short description of an engineering Bugzilla or Jira issue that is published in product Errata advisories and release notes. Engineering typically supplies draft content, which is a summary of the issue, then technical writers edit or rewrite the draft content in accordance with the <em>IBM Style</em> guide. You can write doc texts in more than one way, depending on the issue type:</p>
+<p>The normal stylistic guidelines for documentation from the <em>IBM Style</em> guide and the <em>Red Hat supplementary style guide for product documentation</em> apply also to release note texts, particularly the following:</p>
+</div>
+<div class="paragraph">
+<p>Be clear and concise:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Enhancement</p>
+<p>Focus on the impact on the user, and omit any overly technical details.</p>
 </li>
 <li>
-<p>Bug fix</p>
+<p>Avoid complicated syntax, such as passive voice and modal verbs, and ambiguous language. For example, replace "Should XY happen" with "If XY happens".</p>
 </li>
 <li>
-<p>Known issue</p>
-</li>
-<li>
-<p>Technology Preview</p>
-</li>
-<li>
-<p>Deprecated functionality</p>
+<p>Write easily readable text. Avoid using infinitive statements that are common in merge requests and changelogs, for example, "Remove deprecated support macros".</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Use the following general structure for consistency.</p>
-</div>
-<div class="sect4">
-<h5 id="_enhancement"><a class="anchor" href="#_enhancement"></a><a class="link" href="#_enhancement">Enhancement</a></h5>
-<div class="paragraph">
-<p>Use present tense in one of the following formats:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>This enhancement &lt;present tense explanation&gt;.</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>With this update, &lt;present tense explanation&gt;.</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Example doc texts</div>
-<div class="content">
-<pre>This enhancement optimizes migration of an RBD volume from one Cinder back end to another when the volume resides within the same Ceph cluster. If both volumes are in the same Ceph cluster, Ceph performs data migration instead of the cinder-volume process. This reduces migration time.</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>With this update, you can create application credentials to use keystone to authenticate applications.</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_bug_fix"><a class="anchor" href="#_bug_fix"></a><a class="link" href="#_bug_fix">Bug fix</a></h5>
-<div class="paragraph">
-<p>Use past tense for the problem and present tense for the solution, in the following format:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>Before this update,  &lt;X problem&gt; caused &lt;Y situation&gt; (OPTIONAL: under the following &lt;Z conditions&gt;). With this update, &lt;fix&gt; resolves the issue (OPTIONAL: and &lt;agent&gt; can &lt;perform operation&gt; successfully).</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Example doc text</div>
-<div class="content">
-<pre>Before this update, the loopback device for Cinder iSCSI/LVM backend was not re-created after a system restart, which prevented the cinder-volume service from restarting. With this update, a systemd service re-creates the loopback device and the Cinder iSCSI/LVM backend persists after a restart.</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_known_issue"><a class="anchor" href="#_known_issue"></a><a class="link" href="#_known_issue">Known issue</a></h5>
-<div class="paragraph">
-<p>Use present tense for the issue and the imperative form for the workaround in the following format:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>There is currently a known issue &lt;present tense explanation&gt; under &lt;X conditions&gt;.
-
-Workaround: &lt;workaround&gt;.</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Example doc text</div>
-<div class="content">
-<pre>Currently, you cannot use Orchestration (heat) templates with the director to deploy an overcloud that requires NFS as an Image service (glance) back end. There is currently no workaround for this issue.</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>The Compute services (nova) might fail to deploy because the `nova_wait_for_compute_service` script is unable to query the Nova API. If a remote container image registry is used outside of the undercloud, the Nova API service might not finish deploying in time.
-Workaround: Rerun the deployment command, or use a local container image registry on the undercloud.</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_technology_preview"><a class="anchor" href="#_technology_preview"></a><a class="link" href="#_technology_preview">Technology Preview</a></h5>
-<div class="paragraph">
-<p>For guidance and the template text to use for Technology Preview features, see the <a href="#technology-preview-guidance">Technology Preview</a> section.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="deprecated-and-removed-features"><a class="anchor" href="#deprecated-and-removed-features"></a><a class="link" href="#deprecated-and-removed-features">Deprecated and removed features</a></h5>
-<div class="paragraph">
-<p>Documenting the deprecation and removal stages of software features requires careful and precise communication.
-Highlight the following stages to users:</p>
+<p>Define unfamiliar terms:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Plan to deprecate</p>
+<p>When you first mention a utility, package, command, or similar item outside of a heading, define it. Do not assume that the customer is familiar with it.</p>
 </li>
 <li>
-<p>Deprecate</p>
+<p>Omit the definition in later occurrences. If the context is ambiguous, for example, when the release note text mentions both an <code>example</code> package and an <code>example</code> service, you can repeat the definition to add clarity.</p>
 </li>
 <li>
-<p>Plan to remove</p>
+<p>Avoid definitions in headings, but you can use them to disambiguate different meanings of the same name.</p>
 </li>
 <li>
-<p>Remove</p>
+<p>Expand abbreviations in descriptions. Do not expand abbreviations in headings. For more information, see "Abbreviations" in the <em>IBM Style</em> guide.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>When alternatives to or workarounds for deprecated features are available, clearly inform users about them.</p>
+<p>Use correct capitalization:</p>
 </div>
-<div class="sect5">
-<h6 id="_referring_to_releases_in_deprecation_and_removal_notices"><a class="anchor" href="#_referring_to_releases_in_deprecation_and_removal_notices"></a><a class="link" href="#_referring_to_releases_in_deprecation_and_removal_notices">Referring to releases in deprecation and removal notices</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p>Do not start a sentence with a word in lowercase. You can repeat a definition to avoid starting a sentence with a lowercase name. For more information, see "Capitalization" in the <em>IBM Style</em> guide.</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>In general, avoid definitive statements about specific releases, release versions, or dates for deprecation or removal.
-When possible, use the phrase "is planned for a future release" because it accounts for the possibility of changes to the planned deprecation or removal timeline.</p>
+<p>Keep admonitions to a minimum:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Avoid placing multiple admonitions in a single note.</p>
+</li>
+<li>
+<p>Do not begin a release note with an admonition.</p>
+</li>
+<li>
+<p>For more information, see <a href="#admonitions">Admonitions</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="tenses-in-release-notes"><a class="anchor" href="#tenses-in-release-notes"></a><a class="link" href="#tenses-in-release-notes">Tenses in release notes</a></h4>
+<div class="paragraph">
+<p>Write the release notes from the perspective of just after the release, which is when most of the customers read release notes. The state before the update is in the past and the state after the update is in the present.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the <em>simple present tense</em> as much as possible.</p>
+</li>
+<li>
+<p>Do not use <em>future tenses</em> (or "should" or "might") to describe the state after the update.</p>
+</li>
+<li>
+<p>Use the <em>simple past tense</em> to describe the previous situation before the current update.</p>
+</li>
+<li>
+<p>Follow the CCFR (Cause-Consequence-Fix-Result) tense logic in bug fixes.</p>
+</li>
+<li>
+<p>Do not use "now" to refer to the state after the update. For more information, see the <a href="#now">now</a> glossary entry.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="headings-for-release-notes"><a class="anchor" href="#headings-for-release-notes"></a><a class="link" href="#headings-for-release-notes">Headings for release notes</a></h4>
+<div class="paragraph">
+<p>Introduce each release note with a heading that summarizes the release note. This practice helps customers to quickly determine if the release note is relevant to them.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The heading can, but does not need to be, a full sentence. Do not use a period at the end of the heading.</p>
+</li>
+<li>
+<p>Use <em>sentence-style capitalization</em>, not <em>title case</em>. If necessary, headings can start with a lowercase letter in the case of a lowercase component name. For example: "<code><code>nvme-cli</code></code> and <code>cryptsetup</code> are now available for Opal automation on NVMe SEDs".</p>
+</li>
+<li>
+<p>Write headings that are informative and specific without being overly long or too short. Adhere to the following guidelines:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Keep the heading under 120 characters.</p>
+</li>
+<li>
+<p>Follow the specifics for the release notes type.</p>
+</li>
+<li>
+<p>Mention the component in a heading whenever it might not be obvious.</p>
+</li>
+<li>
+<p>Be specific; do not over-generalize headings. For example, "Program no longer crashes" is too generic.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Do not expand abbreviations in headings. If you use an abbreviation in a heading, expand it on the first mention in the text below.</p>
+</li>
+<li>
+<p>Avoid definitions in headings unless necessary for clarity. For example, use definitions to disambiguate different meanings of the same name: "The <code>journald</code> system role can tune the performance of the <code>journald</code> service".</p>
+</li>
+<li>
+<p>Do not start the heading with a gerund. Use gerunds only for procedural content.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="jira-links-release-notes"><a class="anchor" href="#jira-links-release-notes"></a><a class="link" href="#jira-links-release-notes">References to Jira in release notes</a></h4>
+<div class="paragraph">
+<p>For customer information, include references to Jira tickets on all <em>Known issues</em>  and <em>Fixed issues</em>. Some products provide ticket references for all release note types. Place the reference on the line directly after the entry, not inside parenthesis or brackets. See examples later in this guidance.</p>
 </div>
 <div class="paragraph">
-<p>If you must be specific about a release, use provisional language to reflect the fluid nature of development plans and to acknowledge the potential for plans to change.
-For example, if you must cite a specific version, rather than stating "&lt;x&gt; will be deprecated in version 4.16", use "It is currently planned for &lt;x&gt; to be deprecated in version 4.16".
-Alternatively, if you must cite a deprecation or removal timeline and you want to avoid citing a specific release number, use a phrase such as "&lt;x&gt; is planned to be deprecated in the next release".</p>
+<p>Inform the user that some Jira tickets might require login credentials. For example, write the following in the introduction of your <em>Known issues</em> or <em>Fixed issues</em>:</p>
+</div>
+<div class="paragraph">
+<p>“Some linked Jira tickets are accessible only with Red Hat credentials.”</p>
+</div>
+<div class="paragraph">
+<p>If you refer to those tickets without including a link, inform the user. See the following example:</p>
+</div>
+<div class="paragraph">
+<p>“Some referenced tickets are not linked. This means that the ticket is not accessible without Red Hat credentials."</p>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_deprecation_notice_template"><a class="anchor" href="#_deprecation_notice_template"></a><a class="link" href="#_deprecation_notice_template">Deprecation notice template</a></h6>
+<div class="sect3">
+<h4 id="release-note-types"><a class="anchor" href="#release-note-types"></a><a class="link" href="#release-note-types">Release note types and sections</a></h4>
+<div class="paragraph">
+<p>Each release note is defined by a specific type based on the information it provides to customers. In Jira tickets, the type is defined in the <strong>Release Note Type</strong> field.</p>
+</div>
+<div class="paragraph">
+<p>In a release note document, each release note type is presented in a specific section. Do not use other section names for these release note types.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Release note types and sections</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Release note type</th>
+<th class="tableblock halign-left valign-top">Release note section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feature, Enhancement, Rebase</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New features and enhancements</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technology Preview</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technology Preview features</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deprecated functionality</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deprecated features</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removed functionality</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removed features</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Known issue</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Known issues</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bug fix</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fixed issues</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Every release note type has a template, which is pre-filled in many Jira projects, and that engineers fill in to provide the required information. The writer then rewrites that information into a customer-readable <strong>release note text</strong> (RN text). You can use standard connecting phrases, for example, “As a result,” for results. Sometimes, the information is better presented by changing the order of the pieces of information, for example, a consequence before the cause, or combining them into a single sentence.</p>
+</div>
+<div class="sect4">
+<h5 id="release-notes-features-enhancements"><a class="anchor" href="#release-notes-features-enhancements"></a><a class="link" href="#release-notes-features-enhancements">New features and enhancements</a></h5>
+<div class="paragraph">
+<p>New features are new functions, and enhancements are improvements to existing functions. The release notes for both types are similar, and you can group them together in a single section, or they can be separate.</p>
+</div>
+<div class="listingblock">
+<div class="title">New feature and enhancement engineering template</div>
+<div class="content">
+<pre>Feature, enhancement – describe the feature or enhancement from the user's point of view
+Reason – why has the feature or enhancement been implemented
+Result – what is the current user experience</pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. New feature and enhancement release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>&lt;Heading that summarizes the enhancement or feature&gt;</em></dt>
+<dd>
+<p><em>&lt;Feature, enhancement&gt;</em>. <em>&lt;Reason&gt;</em>. As a result, <em>&lt;result&gt;</em>.</p>
+<div class="paragraph">
+<p>For more information, see <em>&lt;link_to_product_docs&gt;</em>.</p>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Describe why the feature or enhancement benefits the customer or why it is required.</p>
+</li>
+<li>
+<p>Add a link to the product documentation for the feature, if it exists.</p>
+</li>
+<li>
+<p>When a previous Technology Preview changes to full support, make this information clear. Use text similar to these examples:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>&lt;Feature&gt;</em>, available as a Technology Preview before this update, is fully supported from RHEL X.Y.</p>
+</li>
+<li>
+<p><em>&lt;Feature&gt;</em>, introduced in RHEL X.Y as a Technology Preview, is fully supported with this release.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 2. Examples of new features and enhancements release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Cluster API replaces Terraform for VMware vSphere installations</dt>
+<dd>
+<p>In OpenShift Container Platform 4.16, the installation program uses Cluster API instead of Terraform to provision cluster infrastructure during installations on VMware vSphere.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">New packages: keylime</dt>
+<dd>
+<p>RHEL 9.1 introduces Keylime, a tool for attestation of remote systems, which uses the trusted platform module (TPM) technology. With Keylime, you can verify and continuously monitor the integrity of remote systems. You can also specify encrypted payloads that Keylime delivers to the monitored machines, and define automated actions that trigger whenever a system fails the integrity test.
+For more information, see <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html-single/security_hardening/index#assembly_ensuring-system-integrity-with-keylime_security-hardening">Ensuring system integrity with Keylime</a> in the RHEL 9 <em>Security hardening</em> document.</p>
+<div class="paragraph">
+<p>RHELPLAN-92522</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">The Template Sync plugin supports using an HTTP proxy to connect to a repository</dt>
+<dd>
+<p>You can use an HTTP proxy to synchronize templates between your Satellite server and a git repository. Configuring an HTTP proxy for template synchronization ensures that Satellite routes the Template Sync request to the repository through the specified proxy server.
+For more information, see <a href="https://docs.redhat.com/en/documentation/red_hat_satellite/6.17/html-single/administering_red_hat_satellite/index#Synchronizing_Templates_Repositories_admin">Synchronizing template repositories</a> in <em>Administering Red Hat Satellite</em>.</p>
+<div class="paragraph">
+<p><a href="https://issues.redhat.com/browse/SAT-27349">SAT-27349</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="release-notes-rebases"><a class="anchor" href="#release-notes-rebases"></a><a class="link" href="#release-notes-rebases">Rebases</a></h5>
+<div class="paragraph">
+<p>A rebase is an enhancement in which the version of a component increases. Versions are typically presented in the following format:</p>
+</div>
+<div class="paragraph">
+<p>X.Y.Z-A.elN, where X.Y.Z is version, A is build, and elN stands for Enterprise Linux version</p>
+</div>
+<div class="paragraph">
+<p>Example: 1.3.6-3.el8</p>
+</div>
+<div class="paragraph">
+<p>Rebuilds (change in A) are not rebases. Some products include rebases in the New features and enhancements section; some products do not have rebases at all.</p>
+</div>
+<div class="listingblock">
+<div class="title">Rebase engineering template</div>
+<div class="content">
+<pre>Version
+List of highlights - notable new features and bug fixes since the last available version within the same RHEL major version</pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 3. Rebase release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code><em>&lt;package&gt;</em></code> rebased to &lt;X.Y.Z&gt;</dt>
+<dd>
+<p>The <code><em>&lt;package&gt;</em></code> package, which &lt;purpose&gt;, has been rebased to upstream version X.Y.Z. This version provides important fixes and enhancements, most notably the following:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><em>&lt;Enhancement_or_fix&gt;</em>.</p>
+</li>
+<li>
+<p><em>&lt;Enhancement_or_fix&gt;</em>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Write the version of the component only in the X.Y.Z format. Do not include the +1-A.elN part. Do not use monospace or other markup for the version number.</p>
+</li>
+<li>
+<p>Include a grammatically parallel list of highlights, usually an unordered (bulleted) list.</p>
+</li>
+<li>
+<p>Avoid blank rebase descriptions (just a version and no details). If the component is important, include it even if the rebase description is blank.</p>
+</li>
+<li>
+<p>Avoid using ungrammatical language common in merge requests and changelogs, such as infinitive statements and incomplete sentences that do not use articles. For example, a phrase such as "remove deprecated support macros" needs to be rewritten into “Deprecated support macros are removed.”</p>
+</li>
+<li>
+<p>Do not include CVEs in the list of highlights for a rebase if your product does not document CVEs in release notes.</p>
+</li>
+<li>
+<p>In the zeroth minor version (for example, 10.0), rebases are documented as “Package is provided in version X.Y.Z” instead of “Package is rebased to version X.Y.Z”.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 4. Examples of rebase release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">OpenSSL rebased to 3.2.2</dt>
+<dd>
+<p>The OpenSSL packages are rebased to upstream version 3.2.2. This update includes the following enhancements and bug fixes:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>openssl req</code> command with the <code>-extensions</code> option no longer mishandles extensions when creating certificate signing requests (CSR). Before this update, the command fetched, parsed, and checked the name of the configuration file section for consistency but the name was not used for adding extensions to the created CSR file. With this fix, the extension is added to the generated CSR. As a side effect of this change, if the section specifies an extension incompatible with its use in the CSR, the command might fail with an error similar to this: <code>error:11000080:X509 V3 routines:X509V3_EXT_nconf_int:error in extension:crypto/x509/v3_conf.c:48:section=server_cert, name=authorityKeyIdentifier, value=keyid, issuer:always</code>.</p>
+</li>
+<li>
+<p>The default X.500 distinguished name (DN) formatting uses the UTF-8 formatter. This change also removes space characters around the equal sign (<code>=</code>) that separates DN element types from their values.</p>
+</li>
+<li>
+<p>The certificate compression extension (RFC 8879) is supported.</p>
+</li>
+<li>
+<p>You can use the QUIC protocol on the client side as a Technology Preview.</p>
+</li>
+<li>
+<p>The Argon2d, Argon2i, and Argon2id key derivation functions (KDF) are supported.</p>
+</li>
+<li>
+<p>Brainpool curves are added to the TLS 1.3 protocol (RFC 8734), but Brainpool curves remain disabled in all supported system-wide cryptographic policies.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>nbdkit</code> rebased to version 1.38</dt>
+<dd>
+<p>The <code>nbdkit</code> package is rebased to upstream version 1.38, which includes the following notable bug fixes and enhancements:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Block size advertising is enhanced, and a new read-only filter is added.</p>
+</li>
+<li>
+<p>The Python and OCaml bindings support more features of the server API.</p>
+</li>
+<li>
+<p>Internal struct integrity checks are added to make the server more robust.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="release-notes-technology-previews"><a class="anchor" href="#release-notes-technology-previews"></a><a class="link" href="#release-notes-technology-previews">Technology Preview features</a></h5>
+<div class="paragraph">
+<p>Technology Preview features offer early access to new product innovations. This enables customers to test them and provide feedback. These features are not fully supported, might be incomplete, and are not for production use.
+For more information, see <a href="https://access.redhat.com/support/offerings/techpreview/">Technology Preview Features Support Scope</a>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Technology Preview engineering template</div>
+<div class="content">
+<pre>Package - list the package that includes the Technology Preview feature
+Description - describe what the feature does</pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 5. Technology Preview release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>&lt;Feature&gt;</em> (Technology Preview)</dt>
+<dd>
+<p><em>&lt;Release note text&gt;</em>.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Always capitalize both words in “Technology Preview”. Never shorten to "Tech" in customer-facing documents. Do not use the term "Technical Preview".</p>
+</li>
+<li>
+<p>Never use “supported as a Technology Preview”. Avoid <em>support</em> in Technology Preview descriptions. Instead, use neutral words, for example: <em>available</em>, <em>provide</em>, <em>capability</em>, <em>functionality</em>, <em>implement</em>, and <em>enable</em>. For hardware devices, <em>recognize</em> is usually the correct term. For example, components can recognize devices, but Red Hat does not support the devices themselves.</p>
+</li>
+<li>
+<p>Write headings for Technology Preview features similar to headings for new features. End the heading with “(Technology Preview)”.</p>
+</li>
+<li>
+<p>After you briefly describe the feature, mention again that it is a Technology Preview.</p>
+</li>
+<li>
+<p>Do not use the Technology Preview admonition in the release notes because it would be repetitive.</p>
+</li>
+<li>
+<p>Repeat a Technology Preview release note in all subsequent releases until the feature moves to full support or is removed. If necessary, you can adjust the RN text for a minor release.</p>
+</li>
+<li>
+<p>Mention deprecated Technology Previews in both Technology Preview features and Deprecated features sections, and repeat until the last minor release within the major release.</p>
+</li>
+<li>
+<p>When required by stakeholders, you can include the following information in the description:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Request for feedback</p>
+</li>
+<li>
+<p>Link to upstream docs</p>
+</li>
+<li>
+<p>Link to a verified Knowledgebase article</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 6. Examples of Technology Preview release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Azure File CSI supports snapshots (Technology Preview)</dt>
+<dd>
+<p>OpenShift Container Platform 4.17 introduces volume snapshot support for the Microsoft Azure File Container Storage Interface (CSI) Driver Operator. This capability is a Technology Preview feature.</p>
+<div class="paragraph">
+<p>For more information, see <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html-single/storage/#csi-drivers-supported_persistent-storage-csi">CSI drivers supported by OpenShift Container Platform</a> and <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html-single/storage/#csi-volume-snapshots">CSI volume snapshots</a>.</p>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">System-wide post-quantum cryptography is available through <code>crypto-policies-pq-preview</code> (Technology Preview)</dt>
+<dd>
+<p>The <code>TEST-PQ</code> subpolicy contained in the new <code>crypto-policies-pq-preview</code> package provides system-wide post-quantum cryptography (PQC) as a Technology Preview. You can enable PQC by switching to the TEST-PQ subpolicy and restarting the system, for example:</p>
 <div class="listingblock">
 <div class="content">
-<pre>In <em>&lt;product_name&gt; &lt;release&gt;</em>, <em>&lt;name_of_capability_or_feature&gt;</em> is deprecated and is planned to be removed in the <em>&lt;deprecation_timeline&gt;</em>. Red{nbsp}Hat will provide bug fixes and support for this feature during the current release lifecycle, but this feature will no longer receive enhancements and will be removed. As an alternative to <em>&lt;name_of_capability_or_feature&gt;</em>, you can use <em>&lt;alternative_capability_or_feature_if_available&gt;</em> instead.</pre>
+<pre># update-crypto-policies --set DEFAULT:TEST-PQ
+# reboot</pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Note that all PQC algorithms in RHEL 10 are provided as a Technology Preview feature. The package and system-wide cryptographic policy name are subject to change when post-quantum cryptography exits Technology Preview.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://issues.redhat.com/browse/RHEL-58241">RHEL-58241</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="release-notes-deprecated-features"><a class="anchor" href="#release-notes-deprecated-features"></a><a class="link" href="#release-notes-deprecated-features">Deprecated features</a></h5>
+<div class="paragraph">
+<p>Deprecated features are supported but will be removed in a future version. Deprecating a feature is a signal to customers that they should not use the feature for new deployments.</p>
 </div>
 <div class="listingblock">
-<div class="title">Example deprecation notice doc text</div>
+<div class="title">Deprecated feature engineering template</div>
 <div class="content">
-<pre>In Red{nbsp}Hat OpenStack Platform (RHOSP) 14, the director graphical user interface is deprecated and is planned to be removed in a future release. Red{nbsp}Hat will provide bug fixes and support for this feature during the current release lifecycle, but this feature will no longer receive enhancements and will be removed.</pre>
+<pre>Description - describe the discontinued feature
+Consequence - describe the recommended replacement, if applicable</pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 7. Deprecated feature release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>&lt;feature&gt;</em> is deprecated</dt>
+<dd>
+<p>The <em>&lt;feature&gt;</em>, which &lt;purpose&gt;, is deprecated and might be removed in a future major release. You can <em>&lt;purpose&gt;</em> by using <em>&lt;alternative&gt;</em> instead.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
 </div>
 </div>
 </div>
-<div class="sect5">
-<h6 id="_removal_notice_template"><a class="anchor" href="#_removal_notice_template"></a><a class="link" href="#_removal_notice_template">Removal notice template</a></h6>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Describe the feature or component that is deprecated.</p>
+</li>
+<li>
+<p>Write the proposed alternative for the user. Do not use the term “Recommended”. See the <a href="#recommend">recommend</a> glossary entry.</p>
+</li>
+<li>
+<p>Do not repeat the definition of “deprecated” from the section intro.</p>
+</li>
+<li>
+<p>Avoid predicting future feature statuses in release notes, such as "will be deprecated next release".</p>
+</li>
+<li>
+<p>If cloning a previous version of the release notes file for the latest version, ensure the table feature statuses are current for that version.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 8. Examples of deprecation release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">The <code>preserveBootstrapIgnition</code> parameter for AWS is deprecated</dt>
+<dd>
+<p>The <code>preserveBootstrapIgnition</code> parameter for AWS in the <code>install-config.yaml</code> file is deprecated. You can use the <code>bestEffortDeleteIgnition</code> parameter instead.</p>
+<div class="paragraph">
+<p><a href="https://issues.redhat.com/browse/OCPBUGS-33661">OCPBUGS-33661</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>katello-agent</code> is deprecated</dt>
+<dd>
+<p><code>katello-agent</code> is deprecated and might be removed in a future version. Migrate now to Remote Execution or Remote Execution pull mode. If you upgrade to Satellite 6.15 without migrating, you will not be able to perform critical host package actions, including patching and security updates. For more information about migrating to Remote Execution, see <a href="https://access.redhat.com/documentation/en-us/red_hat_satellite/6.14/html-single/managing_hosts/index#Migrating_From_Katello_Agent_to_Remote_Execution_managing-hosts">Migrating From Katello Agent to Remote Execution</a> in <em>Managing Hosts</em>.</p>
+<div class="paragraph">
+<p>SAT-18124</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Bootstrap.py host registration script</dt>
+<dd>
+<p>The <code>bootstrap.py</code> script for registering a host to Satellite or Capsule is deprecated in 6.9. It has been replaced by the <code>curl</code> command created by using the global registration template.</p>
+<div class="paragraph">
+<p><a href="https://issues.redhat.com/browse/SAT-21137">SAT-21137</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>If your product presents deprecations and removals in a table, define the following columns:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Category</dt>
+<dd>
+<p>Shows what is impacted by the deprecation, for example, Installation. This can be a header for the table, or a column in your table.</p>
+</dd>
+<dt class="hdlist1">Feature or component</dt>
+<dd>
+<p>Provides the specific feature or component.</p>
+</dd>
+<dt class="hdlist1">Version</dt>
+<dd>
+<p>Shows when the feature is first deprecated. Keep that version in the table until the feature moves to your list or table of removed features.</p>
+</dd>
+<dt class="hdlist1">Alternative action</dt>
+<dd>
+<p>Directs the user to another solution.</p>
+</dd>
+<dt class="hdlist1">More information</dt>
+<dd>
+<p>If you do not describe alternative actions, link to documentation, and so on in a separate release note, this column guides the user to the alternative feature or component.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Follow these guidelines for the deprecation and removal tables:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For scannability, reduce the number of columns and rows to only what is needed.</p>
+</li>
+<li>
+<p>Avoid overly long descriptions in tables. Aim for between 3 and 11 words. Link to documentation if more information is needed.</p>
+</li>
+<li>
+<p>Avoid blank cells in a table. Define a status, such as “Not available”, to represent that a feature did not exist in a release.</p>
+</li>
+<li>
+<p>Make sure that markup is displayed correctly in table cells, for example, <code>arm64</code>.</p>
+</li>
+<li>
+<p>See the following example table that you can use for deprecations:</p>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Example table of deprecations</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Category</th>
+<th class="tableblock halign-left valign-top">Feature or component</th>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Alternative action</th>
+<th class="tableblock halign-left valign-top">More information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Installation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hive settings in the <code>mch</code> API</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit hive configuration directly with the <code>oc edit</code> command.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For more information, see  <em>&lt;insert_link&gt;</em> .</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="release-notes-removed-features"><a class="anchor" href="#release-notes-removed-features"></a><a class="link" href="#release-notes-removed-features">Removed features</a></h5>
+<div class="paragraph">
+<p>Removed features were deprecated in earlier releases and are no longer supported in the current release.</p>
+</div>
 <div class="listingblock">
+<div class="title">Removed feature engineering template</div>
 <div class="content">
-<pre>In <em>&lt;product_name&gt; &lt;current_release&gt;</em>, <em>&lt;name of capability or feature&gt;</em> has been removed. Bug fixes and support are provided only through the end of the <em>&lt;previous_release&gt;</em> lifecycle. As an alternative to <em>&lt;name_of_capability_or_feature&gt;</em>, you can use <em>&lt;alternative_capability_or_feature_if_available&gt;</em> instead.</pre>
+<pre>Description - describe the removed feature
+Consequence - describe the recommended replacement, if applicable</pre>
 </div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 9. Removed feature release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">&lt;feature&gt; is removed</dt>
+<dd>
+<p>The <em>&lt;feature&gt;</em>, which <em>&lt;purpose&gt;</em>, is removed and is no longer supported. You can <em>&lt;purpose&gt;</em> by using <em>&lt;alternative&gt;</em> instead.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If a functionality is removed in a release (for example, in RHEL 9), it must be documented as deprecated in a preceding release (RHEL 8).</p>
+</li>
+<li>
+<p>Describe the feature or component that is removed.</p>
+</li>
+<li>
+<p>Write the proposed alternative for the user. Do not use the term “Recommended”. See the <a href="#recommend">recommend</a> glossary entry.</p>
+</li>
+<li>
+<p>If a small part of a feature is removed, treat that as a feature change, not a removed feature. Focus on why the change was made and what replaces the removed item.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 10. Examples of removed feature release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>scap-workbench</code> is removed</dt>
+<dd>
+<p>The <code>scap-workbench</code> package is removed in RHEL 10. The <code>scap-workbench</code> graphical utility performed configuration and vulnerability scans on a single local or remote system. As an alternative, you can scan local systems for configuration compliance by using the <code>oscap</code> command and remote systems by using the <code>oscap-ssh</code> command. For more information, see <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/scanning-the-system-for-configuration-compliance#configuration-compliance-scanning">Configuration compliance scanning</a>.</p>
+<div class="paragraph">
+<p>RHELDOCS-19009</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Service Binding Operator documentation removed</dt>
+<dd>
+<p>With this release, the documentation for the Service Binding Operator (SBO) has been removed because this Operator is no longer supported.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>If your product presents deprecations and removals in a table, follow the guidance for deprecation tables.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Remove the entry from the table when the version for that removal is no longer fully supported. Removals are included in removal tables for a product-specific number of releases after the removal; typically for two or three releases.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Example table of removed features</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Category</th>
+<th class="tableblock halign-left valign-top">Feature or component</th>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Alternative action</th>
+<th class="tableblock halign-left valign-top">More information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Application management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Subscriptions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use GitOps for application management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See <em>&lt;insert_link_to_GitOps&gt;</em> for more details.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="release-notes-known-issues"><a class="anchor" href="#release-notes-known-issues"></a><a class="link" href="#release-notes-known-issues">Known issues</a></h5>
+<div class="paragraph">
+<p>Known issues describe existing problems that customers should be aware of, so that they can mitigate them and avoid unnecessary reporting.</p>
 </div>
 <div class="listingblock">
-<div class="title">Example removal notice doc text</div>
+<div class="title">Known issue engineering template</div>
 <div class="content">
-<pre>In Red{nbsp}Hat OpenStack Platform (RHOSP) 16, the Data Processing service (sahara) has been removed. Bug fixes and support are provided only through the end of the RHOSP 15 lifecycle.</pre>
+<pre>Cause - the user action or circumstances that trigger the bug
+Consequence - what the user experience is when the bug occurs
+Workaround - if available
+Result – mandatory if the workaround does not solve the problem completely</pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 11. Known issue release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Heading that summarizes the known issue</dt>
+<dd>
+<p><em>&lt;Cause&gt;</em>. As a consequence, <em>&lt;consequence&gt;</em>.</p>
+<div class="paragraph">
+<p>To work around this problem, <em>&lt;workaround in imperative&gt;</em>. As a result, <em>&lt;result&gt;</em>.</p>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Always provide information about a workaround in a separate paragraph:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If a workaround exists, describe it in the following format:</p>
+<div class="paragraph">
+<p>To work around this problem, &lt;workaround in imperative&gt;.</p>
+</div>
+</li>
+<li>
+<p>If no workaround is mentioned, investigate and try to describe how to avoid or partially mitigate the problem. If there is no workaround or mitigation, explicitly say: “No known workaround exists.”</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Use the present tense.</p>
+</li>
+<li>
+<p>If the known issue applies only to specific batch updates (z-streams), clarify that. For example, the known issue might exist from 4.14.0 to 4.14.4 but not 4.14.5 onwards.</p>
+</li>
+<li>
+<p>Never promise future fixes. Avoid making claims that are related to a future release; do not announce a new component will replace a deprecated one until it is released.</p>
+</li>
+<li>
+<p>For customer reference, include a Jira ticket link to each Known issue on the line directly after the entry. Do not place that link inside parenthesis or brackets. Notify the user if the references are not public in one of the following ways:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If you link to tickets that are not public, tell the user that some Jira tickets might require login credentials, for example: “Some linked Jira tickets are accessible only with Red Hat credentials.”</p>
+</li>
+<li>
+<p>If you refer to non-public tickets without a link, inform the user, for example: “Some referenced tickets are not linked. This means that the ticket is accessible only with Red Hat credentials.”</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Before a release, always check the status of all known issues. If a previously identified known issue is fixed, the customer must be informed in a product-consistent way, for example:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A <em>Fixed issues</em> release note contains a reference to the previous known issue.</p>
+</li>
+<li>
+<p>A <em>New features</em> and enhancements release note announces fixes that cover multiple known issues and contains references to those issues.</p>
+</li>
+<li>
+<p>An erratum that contains a fix refers to the previous known issue.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>A partially resolved issue becomes a fixed issue for the fixed scenario but remains a known issue for the unfixed part.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 12. Examples of known issue release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Inconsistent NVMe device names after reboot</dt>
+<dd>
+<p>A new kernel feature that enables asynchronous NVMe namespace scans is introduced in RHEL 10 to accelerate NVMe disk detection. As a consequence of the asynchronous scans, the <code>/dev/nvmeXnY</code> device files might point to different namespaces after each reboot. This can lead to inconsistent device names.</p>
+<div class="paragraph">
+<p>No known workaround exists.</p>
+</div>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">SELinux autorelabel in the Rescue Mode might cause reboot loop</dt>
+<dd>
+<p>Accessing a file system in <code>rescue</code> mode triggers SELinux to autorelabel the file system on the next boot, which continues until SELinux runs in the <code>permissive</code> mode. Consequently, the system might go into an infinite loop of reboots after exiting the <code>rescue</code> mode because it cannot delete the <code>/.autorelabel</code> file.</p>
+<div class="paragraph">
+<p>To work around this problem, switch to the <code>permissive</code> mode by adding <code>enforcing=0</code> to the kernel command line on the next boot. The system displays a warning message. This message indicates that you might see this problem when accessing the file system in <code>rescue</code> mode.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://issues.redhat.com/browse/RHEL-14005">RHEL-14005</a></p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="release-notes-fixed-issues"><a class="anchor" href="#release-notes-fixed-issues"></a><a class="link" href="#release-notes-fixed-issues">Fixed issues</a></h5>
+<div class="paragraph">
+<p>Fixed issues, also called “bug fixes”, list problems that are resolved in the current release.</p>
+</div>
+<div class="listingblock">
+<div class="title">Fixed issues engineering template</div>
+<div class="content">
+<pre>Cause – the user action or circumstance that triggered the bug, in the past tense.
+Consequence – what the user experience was when the bug occurred, in the past tense.
+Fix – what has changed to fix the bug; do not include overly technical details, in the present perfect or present simple tense.
+Result – what happens now that the patch is applied, in the present tense.</pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 13. Fixed issues release note text template</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Heading that summarizes the fixed issue</dt>
+<dd>
+<p>Before this update, <em>&lt;cause&gt;</em>. As a consequence, <em>&lt;consequence&gt;</em>. With this release, <em>&lt;fix&gt;</em>. As a result, <em>&lt;result&gt;</em>.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to general style, follow these guidelines:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Follow the Cause-Consequence-Fix-Result (CCFR) tense logic: “Before this update, a problem occurred. The current update has fixed the problem. As a result, the problem no longer occurs.”</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Cause</dt>
+<dd>
+<p>The user action or circumstance that triggered the bug, in the past tense.</p>
+</dd>
+<dt class="hdlist1">Consequence</dt>
+<dd>
+<p>What the user experience was when the bug occurred, in the past tense.</p>
+</dd>
+<dt class="hdlist1">Fix</dt>
+<dd>
+<p>What has changed to fix the bug; do not include overly technical details; do not use the present perfect or present simple tense.</p>
+</dd>
+<dt class="hdlist1">Result</dt>
+<dd>
+<p>What happens now that the patch is applied, in the present tense.</p>
+</dd>
+</dl>
+</div>
+</li>
+<li>
+<p>Use “before this update” instead of “previously” to refer to the past situation. See the <a href="#previously">previously</a> glossary entry.</p>
+</li>
+<li>
+<p>Partially fixed issues might require a separate Known issue for the unfixed scenario.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="title">Example 14. Example known issue release notes</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">IPsec <code>ondemand</code> connections no longer fail to establish</dt>
+<dd>
+<p>Before this update, when an IPsec connection with the <code>ondemand</code> option was configured by using the TCP protocol, the connection failed to establish. With this update, the new Libreswan package makes sure that the initial IKE negotiation completes over TCP. As a result, Libreswan successfully establishes the connection even in TCP mode of IKE negotiation.</p>
+<div class="paragraph">
+<p>RHEL-51880</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Multipath no longer crashes because of errors encountered by the ontap prioritizer</dt>
+<dd>
+<p>Before this update, <code>multipathd</code> crashed when it was configured to use the ontap prioritizer on an unsupported path, because the prioritizer only works with NetApp storage arrays. This failure occurred because of a bug in the prioritizer’s error logging code, which caused it to overflow the error message buffer. With this update, the error logging code is fixed, and <code>multipathd</code> no longer crashes because of errors encountered by the ontap prioritizer.</p>
+<div class="paragraph">
+<p>RHEL-49747</p>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Infoblox plugin no longer suggests IP addresses already in use</dt>
+<dd>
+<p>Before this update, when you used the Infoblox plugin as the DHCP provider, it suggested free IP addresses that were already in use. With this fix, you can configure the plugin to check the availability of IP addresses. The availability checks are enabled by default.</p>
+<div class="paragraph">
+<p>TICKET-REFERENCE</p>
+</div>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -6047,7 +7181,7 @@ Avoid indicating direction, such as left, right, above and below, since these ha
 <div class="title">Additional resources</div>
 <ul>
 <li>
-<p>Understanding WCAG 2.0</p>
+<p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/Overview.html">Understanding WCAG 2.0</a></p>
 <div class="ulist">
 <ul>
 <li>
@@ -7102,6 +8236,21 @@ An Ansible task is a set of instructions to achieve a state defined, in its broa
 <h5 id="backtrace"><a class="anchor" href="#backtrace"></a><a class="link" href="#backtrace"><span class="image"><img src="images/yes.png" alt="yes"></span> backtrace (noun)</a></h5>
 <div class="paragraph">
 <p><strong>Description</strong>: <em>Backtrace</em> is another name for <em>stack trace</em> (or <em>stack backtrace</em>), which is a report of the active stack frames (function calls) at a certain point in time during the execution of a program. The Python programming language uses the term "traceback", possibly because the stack frames are printed in the opposite order of those presented by gdb, the GNU Debugger. "Traceback" is the preferred term when referring to a Python stack trace.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use it</strong>: yes</p>
+</div>
+<div class="paragraph vale-ignore">
+<p><strong>Incorrect forms</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>See also</strong>:</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="backup-storage-location"><a class="anchor" href="#backup-storage-location"></a><a class="link" href="#backup-storage-location"><span class="image"><img src="images/yes.png" alt="yes"></span> backup storage location (noun)</a></h5>
+<div class="paragraph">
+<p><strong>Description</strong>: In the OpenShift API for Data Protection, the Data Protection Application backs up cluster data in the <em>backup storage location (BSL)</em>.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
@@ -8695,18 +9844,18 @@ Write "Basic HTTP authentication" on first use and "Basic authentication" after 
 </div>
 </div>
 <div class="sect4">
-<h5 id="composite-content-view"><a class="anchor" href="#composite-content-view"></a><a class="link" href="#composite-content-view"><span class="image"><img src="images/yes.png" alt="yes"></span> Composite Content View (noun)</a></h5>
+<h5 id="composite-content-view"><a class="anchor" href="#composite-content-view"></a><a class="link" href="#composite-content-view"><span class="image"><img src="images/yes.png" alt="yes"></span> composite content view (noun)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: In Red&#160;Hat Satellite, a <em>Composite Content View</em> is a collection of Content Views. Write "Composite Content View (CCV)" on first use and "CCV" after that.</p>
+<p><strong>Description</strong>: In Red&#160;Hat Satellite, a <em>composite content view</em> is a collection of content views.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
 </div>
 <div class="paragraph vale-ignore">
-<p><strong>Incorrect forms</strong>: Composite Content view, composite content view, Composite View, composite view</p>
+<p><strong>Incorrect forms</strong>: Composite Content View, Composite Content view, Composite View, composite view</p>
 </div>
 <div class="paragraph">
-<p><strong>See also</strong>: <a href="#content-view">Content View</a></p>
+<p><strong>See also</strong>: <a href="#content-view">content view</a></p>
 </div>
 </div>
 <div class="sect4">
@@ -8937,18 +10086,18 @@ image repository contains one or more tagged images.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="content-view"><a class="anchor" href="#content-view"></a><a class="link" href="#content-view"><span class="image"><img src="images/yes.png" alt="yes"></span> Content View (noun)</a></h5>
+<h5 id="content-view"><a class="anchor" href="#content-view"></a><a class="link" href="#content-view"><span class="image"><img src="images/yes.png" alt="yes"></span> content view (noun)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: In Red&#160;Hat Satellite, a <em>Content View</em> is a subset of Library content created by intelligent filtering. Write "Content View (CV)" on first use and "CV" after that.</p>
+<p><strong>Description</strong>: In Red&#160;Hat Satellite, a <em>content view</em> is a subset of Library content created by intelligent filtering.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
 </div>
 <div class="paragraph vale-ignore">
-<p><strong>Incorrect forms</strong>: Content view, content view</p>
+<p><strong>Incorrect forms</strong>: Content view, Content View</p>
 </div>
 <div class="paragraph">
-<p><strong>See also</strong>: <a href="#composite-content-view">Composite Content View</a></p>
+<p><strong>See also</strong>: <a href="#composite-content-view">composite content view</a></p>
 </div>
 </div>
 <div class="sect4">
@@ -10009,7 +11158,7 @@ Red&#160;Hat Directory Server conforms to LDAP standards.</p>
 <p><strong>Description</strong>: In Red&#160;Hat OpenShift, use "disconnected" when discussing installing a cluster in an environment that does not have an active connection to the internet. Use "disconnected" regardless of whether the restriction is physical or logical.</p>
 </div>
 <div class="paragraph">
-<p>"Disconnected" is the preferred term over "restricted", "air-gapped", or "offline".</p>
+<p>"Disconnected" is the preferred term over "restricted", "air-gapped", or "offline" for Red&#160;Hat OpenShift, but not for Red&#160;Hat build of MicroShift.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
@@ -10018,7 +11167,7 @@ Red&#160;Hat Directory Server conforms to LDAP standards.</p>
 <p><strong>Incorrect forms</strong>:</p>
 </div>
 <div class="paragraph">
-<p><strong>See also</strong>:</p>
+<p><strong>See also</strong>: <a href="#offline">offline</a></p>
 </div>
 </div>
 <div class="sect4">
@@ -12440,7 +13589,7 @@ Capitalize it only when it starts a sentence.</p>
 <div class="sect4">
 <h5 id="identity-provider"><a class="anchor" href="#identity-provider"></a><a class="link" href="#identity-provider"><span class="image"><img src="images/yes.png" alt="yes"></span> identity provider (noun)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: An <em>identity provider (IDP)</em> is a service that authenticates a user. Red&#160;Hat Single Sign-On is an IDP.</p>
+<p><strong>Description</strong>: An <em>identity provider (IdP)</em> is a service that authenticates a user. Red&#160;Hat Single Sign-On is an IdP.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
@@ -12455,7 +13604,7 @@ Capitalize it only when it starts a sentence.</p>
 <div class="sect4">
 <h5 id="identity-provider-federation"><a class="anchor" href="#identity-provider-federation"></a><a class="link" href="#identity-provider-federation"><span class="image"><img src="images/yes.png" alt="yes"></span> identity provider federation (noun)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: In Red&#160;Hat Single Sign-On, you can delegate authentication to one or more IDPs, and this process is referred to as <em>identity provider federation</em>. Social login through Facebook or Google+ is an example of identity provider federation. You can also hook Red&#160;Hat Single Sign-On to delegate authentication to any other OpenID Connect or SAML 2.0 IDP.</p>
+<p><strong>Description</strong>: In Red&#160;Hat Single Sign-On, you can delegate authentication to one or more IdPs, and this process is referred to as <em>identity provider federation</em>. Social login through Facebook or Google+ is an example of identity provider federation. You can also hook Red&#160;Hat Single Sign-On to delegate authentication to any other OpenID Connect or SAML 2.0 IdP.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
@@ -12470,7 +13619,7 @@ Capitalize it only when it starts a sentence.</p>
 <div class="sect4">
 <h5 id="identity-provider-mappers"><a class="anchor" href="#identity-provider-mappers"></a><a class="link" href="#identity-provider-mappers"><span class="image"><img src="images/yes.png" alt="yes"></span> identity provider mappers (noun)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: When doing IDP federation, you can map incoming tokens and assertions to user and session attributes, which you refer to as "identity provider mappers". This helps you propagate identity information from the external IDP to your client requesting authentication.</p>
+<p><strong>Description</strong>: When doing IdP federation, you can map incoming tokens and assertions to user and session attributes, which you refer to as "identity provider mappers". This helps you propagate identity information from the external IdP to your client requesting authentication.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
@@ -15774,6 +16923,21 @@ Capitalize it only when it starts a sentence.</p>
 </div>
 </div>
 <div class="sect4">
+<h5 id="nmstate"><a class="anchor" href="#nmstate"></a><a class="link" href="#nmstate"><span class="image"><img src="images/yes.png" alt="yes"></span> Nmstate (noun)</a></h5>
+<div class="paragraph">
+<p><strong>Description</strong>: <em>Nmstate</em> is a declarative API to manage a host&#8217;s network settings. The administrator describes a certain network state, and Nmstate applies it to the host or rolls back the changes if the process fails.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use it</strong>: yes</p>
+</div>
+<div class="paragraph vale-ignore">
+<p><strong>Incorrect forms</strong>: NMstate, NmState, nmstate</p>
+</div>
+<div class="paragraph">
+<p><strong>See also</strong>:</p>
+</div>
+</div>
+<div class="sect4">
 <h5 id="node"><a class="anchor" href="#node"></a><a class="link" href="#node"><span class="image"><img src="images/yes.png" alt="yes"></span> node (noun)</a></h5>
 <div class="paragraph">
 <p><strong>Description</strong>: (1) In networks, a <em>node</em> is a processing location. A node can be a computer or other device, such as a printer. Every node has a unique network address, sometimes called a Data Link Control (DLC) address or Media Access Control (MAC) address. In tree structures, a <em>node</em> is a point where two or more lines meet. (2) In the context of OpenShift, a <em>node</em> provides the runtime environments for containers. (3) In the context of OpenStack, a <em>node</em> is a machine running a particular OpenStack service, for example, "a Networking node". Exceptions: In a virtualization use case where the machine resources are being used to host virtual machines, use "host" instead of "node", for example, "a Compute host".</p>
@@ -15975,6 +17139,21 @@ Capitalize it only when it starts a sentence.</p>
 </div>
 </div>
 <div class="sect4">
+<h5 id="offline"><a class="anchor" href="#offline"></a><a class="link" href="#offline"><span class="image"><img src="images/yes.png" alt="yes"></span> offline (adjective)</a></h5>
+<div class="paragraph">
+<p><strong>Description</strong>: In Red&#160;Hat build of MicroShift, use <em>offline</em> for endpoints where no network is present or all network cards are unplugged. Also use <em>offline</em> to describe endpoints where both conditions are true. Examples include edge devices in physically remote locations. For situations where a network is present, but devices or hosts are isolated from it, such as in restricted networks or air-gapped networks, use <em>disconnected</em>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use it</strong>: yes</p>
+</div>
+<div class="paragraph vale-ignore">
+<p><strong>Incorrect forms</strong>:</p>
+</div>
+<div class="paragraph">
+<p><strong>See also</strong>: <a href="#disconnected">disconnected</a></p>
+</div>
+</div>
+<div class="sect4">
 <h5 id="offline-backup"><a class="anchor" href="#offline-backup"></a><a class="link" href="#offline-backup"><span class="image"><img src="images/yes.png" alt="yes"></span> offline backup (noun)</a></h5>
 <div class="paragraph">
 <p><strong>Description</strong>: Use "offline backup" to refer to backing up a database while the database is not being accessed by applications.</p>
@@ -16052,7 +17231,7 @@ Capitalize it only when it starts a sentence.</p>
 <div class="sect4">
 <h5 id="on-premise"><a class="anchor" href="#on-premise"></a><a class="link" href="#on-premise"><span class="image"><img src="images/caution.png" alt="with caution"></span> on-premise (adjective)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: Substitute "on-site" or "in-house" for "on-premise" whenever possible. Although "on-premises" is grammatically correct, "on-premise" is preferred by the industry and the Red&#160;Hat Cloud business unit. Capitalize "on-premise" only when using it as part of the name of the Red&#160;Hat product "Red&#160;Hat Storage Server for On-premise".</p>
+<p><strong>Description</strong>: Substitute "on-site" or "in-house" for "on-premise" whenever possible. Although "on-premises" is grammatically correct, "on-premise" is preferred by the industry and the Red&#160;Hat Cloud business unit. Capitalize "on-premise" only when using it as part of the name of the Red&#160;Hat product "Red&#160;Hat Storage Server for On-premise". For Red&#160;Hat OpenShift Container Platform, <em>on-premise</em> is a collective term for grouping the bare-metal, VMware vSphere, Nutanix, and Red&#160;Hat OpenStack Platform (RHOSP) platforms, so you can use the term in this context.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: with caution</p>
@@ -17339,21 +18518,6 @@ Use "plugin" rather than "plug-in", unless you are updating existing content tha
 </div>
 </div>
 <div class="sect4">
-<h5 id="product"><a class="anchor" href="#product"></a><a class="link" href="#product"><span class="image"><img src="images/yes.png" alt="yes"></span> Product (noun)</a></h5>
-<div class="paragraph">
-<p><strong>Description</strong>: In Red&#160;Hat Satellite, a Product is a collection of repositories.</p>
-</div>
-<div class="paragraph">
-<p><strong>Use it</strong>: yes</p>
-</div>
-<div class="paragraph vale-ignore">
-<p><strong>Incorrect forms</strong>: product</p>
-</div>
-<div class="paragraph">
-<p><strong>See also</strong>:</p>
-</div>
-</div>
-<div class="sect4">
 <h5 id="project"><a class="anchor" href="#project"></a><a class="link" href="#project"><span class="image"><img src="images/yes.png" alt="yes"></span> project (noun)</a></h5>
 <div class="paragraph">
 <p><strong>Description</strong>: (1) In Red&#160;Hat OpenShift, a <em>project</em> corresponds to a Kubernetes namespace. They organize and group objects in the system, such as services and deployments, as well as provide security policies specific to those resources. (2) In Red&#160;Hat Process Automation Manager and Red&#160;Hat Decision Manager, a project is a container that comprises packages of assets (business processes, rules, work definitions, decision tables, fact models, data models, and DSLs) and is located in the knowledge repository. This container defines the properties of the KIE base and KIE session that are applied to its content. You can edit these entities in the project editor in Business Central.</p>
@@ -18216,36 +19380,6 @@ Use "privilege" in the context of system actions and the abilities of an agent, 
 </div>
 <div class="paragraph">
 <p><strong>See also</strong>: <a href="#jboss-eap">JBoss EAP</a></p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="red-hat-network-proxy-server"><a class="anchor" href="#red-hat-network-proxy-server"></a><a class="link" href="#red-hat-network-proxy-server"><span class="image"><img src="images/yes.png" alt="yes"></span> Red&#160;Hat Network Proxy Server (noun)</a></h5>
-<div class="paragraph">
-<p><strong>Description</strong>: Use "Red&#160;Hat Network Proxy Server" for the first occurrence; use "RHN Proxy Server" or omit the word "Server" from any of the previous constructions on subsequent mentions. With sufficient context, you can refer to "Satellite" and "Proxy", for example, "RHN Satellite and Proxy" instead of "RHN Satellite and RHN Proxy".</p>
-</div>
-<div class="paragraph">
-<p><strong>Use it</strong>: yes</p>
-</div>
-<div class="paragraph vale-ignore">
-<p><strong>Incorrect forms</strong>: Red&#160;Hat Proxy (Server)</p>
-</div>
-<div class="paragraph">
-<p><strong>See also</strong>: <a href="#red-hat-network-satellite-server">Red&#160;Hat Network Satellite Server</a></p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="red-hat-network-satellite-server"><a class="anchor" href="#red-hat-network-satellite-server"></a><a class="link" href="#red-hat-network-satellite-server"><span class="image"><img src="images/yes.png" alt="yes"></span> Red&#160;Hat Network Satellite Server (noun)</a></h5>
-<div class="paragraph">
-<p><strong>Description</strong>: Use "Red&#160;Hat Network Satellite Server" for the first occurrence; use "RHN Satellite Server" or omit the word "Server" from any of the previous constructions on subsequent mentions. With sufficient context, you can refer to "Satellite" and "Proxy", for example, "RHN Satellite and Proxy" instead of "RHN Satellite and RHN Proxy".</p>
-</div>
-<div class="paragraph">
-<p><strong>Use it</strong>: yes</p>
-</div>
-<div class="paragraph vale-ignore">
-<p><strong>Incorrect forms</strong>: Red&#160;Hat Satellite (Server)</p>
-</div>
-<div class="paragraph">
-<p><strong>See also</strong>: <a href="#red-hat-network-proxy-server">Red&#160;Hat Network Proxy Server</a></p>
 </div>
 </div>
 <div class="sect4">
@@ -20771,15 +21905,15 @@ Therefore, if you need to use the indefinite article before "sosreport", use <em
 </div>
 </div>
 <div class="sect4">
-<h5 id="subscription-manifest"><a class="anchor" href="#subscription-manifest"></a><a class="link" href="#subscription-manifest"><span class="image"><img src="images/yes.png" alt="yes"></span> Subscription Manifest (noun)</a></h5>
+<h5 id="subscription-manifest"><a class="anchor" href="#subscription-manifest"></a><a class="link" href="#subscription-manifest"><span class="image"><img src="images/yes.png" alt="yes"></span> subscription manifest (noun)</a></h5>
 <div class="paragraph">
-<p><strong>Description</strong>: In Red&#160;Hat Satellite, a <em>Subscription Manifest</em> is a mechanism for transferring subscriptions from Red&#160;Hat Customer Portal to Red&#160;Hat Satellite 6. Use the two-word name in full on first use in a section; the word "manifest" is acceptable thereafter.</p>
+<p><strong>Description</strong>: In Red&#160;Hat Satellite, a <em>subscription manifest</em> is a mechanism for transferring subscriptions from Red&#160;Hat Customer Portal to Red&#160;Hat Satellite 6. Use the two-word name in full on first use in a section; the word "manifest" is acceptable thereafter.</p>
 </div>
 <div class="paragraph">
 <p><strong>Use it</strong>: yes</p>
 </div>
 <div class="paragraph vale-ignore">
-<p><strong>Incorrect forms</strong>: Subscription manifest</p>
+<p><strong>Incorrect forms</strong>: Subscription Manifest</p>
 </div>
 <div class="paragraph">
 <p><strong>See also</strong>:</p>
@@ -22910,7 +24044,7 @@ You can use a TGT to request further access, and provide the user with a Single 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-06-26 15:06:06 UTC
+Last updated 2025-09-17 19:39:00 UTC
 </div>
 </div>
 <!-- Nav bar -->
