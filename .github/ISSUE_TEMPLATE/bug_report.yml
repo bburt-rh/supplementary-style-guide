@@ -74,14 +74,6 @@ body:
       placeholder: "Describe your proposed change here."
     validations:
       required: true
-  - type: textarea
-    id: change-justification
-    attributes:
-      label: Why is this change needed?
-      description: Why do you think this change is important? What problem does it solve or what improvement does it provide?
-      placeholder: "Explain the need for this change."
-    validations:
-      required: true
   - type: markdown
     attributes:
       value: |
