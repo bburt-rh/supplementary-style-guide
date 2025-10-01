@@ -25,7 +25,7 @@ body:
         - P3 (lowest)
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: relevant-pages
     attributes:
       label: Relevant page(s)
